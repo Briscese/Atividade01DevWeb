@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre com seus Dados</title>
+</head>
+<body>
+    <form action="/entrecomnome" method="POST">
+        <label for="nome"> Entre com seu nome: </label>
+        <input type="text" id="nome" name="nome" value="<%= nome%>" requeired><br>
+        <label for="nome"> Entre com seu sobre-nome: </label>
+        <input type="text" id="sobrenome" name="sobrenome" value="<%= sobrenome%>" requeired><br>
+        <label for="nome"> Entre com sua idade: </label>
+        <input type="text" id="idade" name="idade" value="<%= idade%>" requeired><br>
+        <label for="nome"> Entre com seu pais: </label>
+        <input type="text" id="pain" name="pais" value="<%= pais%>" requeired><br>
+
+        <input type="submit" value="Alterar Cadastro">
+    </form>
+
+    <hr>
+
+    <h3>Nome: <%= nome%></h3>
+    <h3>Sobrenome: <%= sobrenome%></h3>
+    <h3>Idade: <%= idade%></h3>
+    <h3>Pais: <%= pais%></h3>
+    
+</body>
+</html>

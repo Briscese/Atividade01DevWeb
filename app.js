@@ -40,6 +40,15 @@ app.post('/notas',(req,res) => {
     res.render('notas',{nota1: nota1, nota2: nota2, nota3: nota3,media: media, classificacao: classificacao})
 })
 
+app.post('/entrecomnome',(req,res)=>{
+    var nome = req.body.nome;
+    var sobrenome = req.body.sobrenome;
+    var idade = req.body.idade;
+    var pais = req.body.pais;
+
+    res.render('entrecomnome',{nome: nome , sobrenome: sobrenome, idade: idade, pais: pais})
+})
+
 
 
 app.listen(3000,()=>{
